@@ -237,24 +237,53 @@ footer h1{
     }
 
     .heroSec{
+        width: 100%;
+        padding: 0;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .ctg_content{
    
     flex-direction: column;
+     align-items: center;
     gap: 15px;
 }
 .ctg-items{
+    width: 100%;
+}
+.card_body{
     width: 100%;
 }
 
 /* card body */
 .card_content{
     flex-direction: column;
+     align-items: center;
+     justify-items: center;
     gap: 10px;
+}
+.email_box{
+    width: 100%;
 }
  
 
+.headline{
+    font-size: var(--text-lg);
+    color: var(--text-color);
+}
+.heroSec p{
+    font-size:var(--text-sm);
+    color: var(--text-sec);
+}
+.priceing{
+font-size: var(--text-lg);
+color: var(--main-color);
+margin: 15px 0;
+}
+}
+.heroSec img{
+    width: 100%;
 }
 
 
