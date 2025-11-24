@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Poppins", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* =========
+    ROOT   
+    ======== */
+:root{
+    /* page all color */
+    --main-color:#FF136F;
+     --primary-color: #FF9C35;
+  --secondary-color: #3F07F8;
+  --text-color: #1F1F1F;
+  --text-sec:#4E4E4E;
+  --background-color: #FEEAE9;
+
+  /* text-font */
+  --text-sm:16px ;
+  --text-lg:24px;
+  --text-xl:36px;
+  --text-2xl:56px;
+  --text-mark:41px;
+  --container-lg:1128px;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif; 
+   
+}
+
+.container{
+    width: 1128px;
+    margin: 20px auto;
+}
+.navbar{
+   
+    margin: 10px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+.heroSec{
+    background: var(--background-color);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.headline{
+    font-size: var(--text-2xl);
+    color: var(--text-color);
+}
+.heroSec p{
+    font-size:var(--text-sm);
+    color: var(--text-sec);
+}
+.priceing{
+font-size: var(--text-xl);
+color: var(--main-color);
+margin: 15px 0;
+}
+
+.h__btn{
+    padding: 15px 30px;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.h__btn:hover{
+    cursor: pointer;
+    background-color:var(--primary-color);
+    color: black;
+}
+
+
+.ctg_headline{
+    font-size: var(--text-xl);
+    margin: 20px 0;
+
+}
+.ctg h2{
+    font-size: var(--text-lg);
+    color: white
+    
+
+}
+
+.ctg_content{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.ctg-items{
+ padding: 10px 35px;
+    width: 360px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.ctg_item1{
+    background-color: var(--primary-color);
+}
+
+.ctg_item2{
+    background-color: var(--main-color);
+}
+
+.ctg_item3{
+    background-color: var(--secondary-color);
+  
+}
+
+/* =====Card body===== */
+ 
+.card_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.card_body{
+    width: 360px;
+    height: auto;
+    border: 2px solid var(--text-sec);
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.card_title{
+    font-size: var(--text-lg);
+    margin: 20px 0;
+
+}
+.card_body p{
+    font-size: var(--text-sm);
+    color: var(--text-sec); 
+    margin: 15px;
+}
+.card_price{
+    font-size: var(--text-lg);
+    font-weight: normal;
+    text-align: center;
+}
+.card_btn{
+    padding: 10px 20px ;
+    font-size: var(--text-sm);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600; 
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    transition: all 0.2s ease-in-out;
+}
+.card_btn:hover{
+    cursor: pointer;
+    background-color:var(--primary-color);
+    color: black;
+    
+}
+footer{
+    height: 455px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer h1{
+    font-size: var(--text-xl);
+    text-transform: uppercase;
+
+
+}
+
+
+
+.email_box{
+    width: 700px;
+    height: 73px;
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: px;
+}
+.email_box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+.email_box button{
+    padding: 0 30px;
+    background-color: var(--main-color);
+    border: none;
+    /* border-radius: 10px; */
+    font-size: var(--text-lg);
+    color: white; opacity: 0.8;
+}
+
+.email_box button:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+/* responsive */
+/* for mobile */
+@media (max-width:640px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .heroSec{
+        flex-direction: column;
+    }
+    .ctg_content{
+   
+    flex-direction: column;
+    gap: 15px;
+}
+.ctg-items{
+    width: 100%;
+}
+
+/* card body */
+.card_content{
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+
+}
+
+
+
+/* for tablet */
+
+@media (max-width:992px) {
+     .container{
+        width: 90%;
+    }
+
+       .heroSec{
+        flex-wrap: wrap;
+    }
+
+
+    .ctg_content{
+
+    flex-wrap: wrap;  }
+
+    .card_content{
+    flex-wrap: wrap;
+}
+
+}
