@@ -247,6 +247,7 @@ footer h1{
    
     flex-direction: column;
      align-items: center;
+     justify-content: center;
     gap: 15px;
 }
 .ctg-items{
@@ -281,9 +282,12 @@ font-size: var(--text-lg);
 color: var(--main-color);
 margin: 15px 0;
 }
-}
+
 .heroSec img{
     width: 100%;
+}
+
+
 }
 
 
@@ -297,15 +301,21 @@ margin: 15px 0;
 
        .heroSec{
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
 
     .ctg_content{
 
-    flex-wrap: wrap;  }
+    flex-wrap: wrap; 
+align-items: center;
+ justify-content: center; }
 
     .card_content{
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 }
